@@ -116,4 +116,4 @@
 - ❌ 强反爬且无合法 Cookie 的页面
 - ❌ 需人脸等复杂验证的登录流程
 
-更多类型说明见 [监控任务类型](/features/task-types)。
+更多类型说明见 [监控任务类型](../features/task-types.md)。

@@ -4,7 +4,7 @@
 
 ## 步骤 1：登录账号
 
-> 尚未安装？请先阅读 [安装与部署](/guide/installation) 完成桌面客户端或 Web 部署。
+> 尚未安装？请先阅读 [安装与部署](installation.md) 完成桌面客户端或 Web 部署。
 
 - **桌面版**：启动客户端，展示微信登录二维码
 - **Web 版**：浏览器打开 `http://<主机>:9876`，在页面中扫码登录
@@ -27,7 +27,7 @@
 | 服务器能不能 Ping 通 | **Ping 检测** |
 | 内置类型覆盖不了的巡检、签到、数据抓取 | **自定义脚本** |
 
-各类型详细说明见 [监控任务类型](/features/task-types)。
+各类型详细说明见 [监控任务类型](../features/task-types.md)。
 
 填写 **任务名称**，然后按向导进入后续步骤。
 
@@ -52,21 +52,21 @@
 ## 步骤 4：绑定通知并保存
 
 1. 在任务向导最后一步勾选已配置的通知渠道
-2. 还没有渠道？进入「我的 → 通知渠道」添加（推荐先配 [pushplus](/features/notify-pushplus) 或 [本地通知](/features/notify-local)）
+2. 还没有渠道？进入「我的 → 通知渠道」添加（推荐先配 [pushplus](../features/notify-pushplus.md) 或 [本地通知](../features/notify-local.md)）
 3. 保存后任务处于 **运行** 状态，将按频率自动执行
 
 ::: tip 立即测试
 任务列表中点击 <kbd>立即执行</kbd>，可马上验证配置是否正确、通知能否收到。
 :::
 
-<img src="/guide/task-list.png" alt="监控任务列表：新增任务、筛选与立即执行" class="doc-screenshot" />
+<img src="../public/guide/task-list.png" alt="监控任务列表：新增任务、筛选与立即执行" class="doc-screenshot" />
 
 ## 完成 🎉
 
 第一个任务已跑起来。建议继续了解：
 
-- 📋 [监控任务类型](/features/task-types) - 七类任务与触发规则
-- 📜 [执行记录与对比](/features/records) - 查看历次结果
-- 🔔 [通知渠道总览](/features/notify-overview)
-- ⏱ [定时与执行频率](/features/cron)
+- 📋 [监控任务类型](../features/task-types.md) - 七类任务与触发规则
+- 📜 [执行记录与对比](../features/records.md) - 查看历次结果
+- 🔔 [通知渠道总览](../features/notify-overview.md)
+- ⏱ [定时与执行频率](../features/cron.md)
  

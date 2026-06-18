@@ -52,8 +52,8 @@
 
 ## 接下来
 
-- 👉 [安装与部署](/guide/installation) - 桌面客户端与 Web 部署
-- 👉 [快速上手](/guide/quick-start) - 创建第一个监控任务
-- 👉 [监控任务类型](/features/task-types) - 七类任务说明与配置步骤
-- 👉 [API 文档](/reference/open-api) - 开放接口、前置操作脚本与 WebDiff SDK
-- 👉 [联系我们](/guide/contact) - 咨询与反馈问题
+- 👉 [安装与部署](guide/installation.md) - 桌面客户端与 Web 部署
+- 👉 [快速上手](guide/quick-start.md) - 创建第一个监控任务
+- 👉 [监控任务类型](features/task-types.md) - 七类任务说明与配置步骤
+- 👉 [API 文档](reference/open-api.md) - 开放接口、前置操作脚本与 WebDiff SDK
+- 👉 [联系我们](guide/contact.md) - 咨询与反馈问题

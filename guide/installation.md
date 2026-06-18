@@ -216,4 +216,4 @@ node server/index.js --host 0.0.0.0 --port 8080 --data-dir /var/lib/webdiff
 - **Web 安装包**：停止服务 → 备份数据目录 → 解压新版本 → 重启服务
 - **Docker**：备份 volume → `docker pull` 新镜像 → 停止旧容器 → 用新镜像启动
 
-版本变更记录见 [更新日志](/guide/changelog)。
+版本变更记录见 [更新日志](changelog.md)。

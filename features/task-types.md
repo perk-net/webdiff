@@ -2,7 +2,7 @@
 
 创建任务时先选择类型，客户端会展示对应的配置向导。七类任务共用定时调度、[运行客户端](../client/run-client) 与执行记录；各类型适用场景与触发规则见下方链接的独立说明页。
 
-<img src="/features/overview.png" alt="客户端任务列表与任务类型" class="doc-screenshot" />
+<img src="../public/features/overview.png" alt="客户端任务列表与任务类型" class="doc-screenshot" />
 
 ## 七种任务类型
 

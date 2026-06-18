@@ -21,7 +21,7 @@
 
 新建任务时选择「自定义脚本」。该类型无固定监控 URL，任务标识为 `script://` + 语言（如 `script://javascript`、`script://python3`）。
 
-<img src="/features/script/step1.png" alt="选择自定义脚本类型" class="doc-screenshot" />
+<img src="../public/features/script/step1.png" alt="选择自定义脚本类型" class="doc-screenshot" />
 
 </li>
 
@@ -31,7 +31,7 @@
 
 设置 **任务名称** 与 **运行客户端**（三种运行方案与会员限制见 [运行客户端](../client/run-client)）。
 
-<img src="/features/script/step2.png" alt="基础信息与运行客户端" class="doc-screenshot" />
+<img src="../public/features/script/step2.png" alt="基础信息与运行客户端" class="doc-screenshot" />
 
 </li>
 
@@ -39,7 +39,7 @@
 
 ### 配置运行环境（可选）
 
-本步三项均可跳过；配置后可在脚本中通过 [WebDiff SDK](/reference/webdiff-sdk) 读取。
+本步三项均可跳过；配置后可在脚本中通过 [WebDiff SDK](../reference/webdiff-sdk.md) 读取。
 
 **环境变量**
 
@@ -64,7 +64,7 @@
 - Python 3：`webdiff.notify(title, content, alias='别名')` 或 `channel='渠道名称'`
 - 也可不绑定别名，直接在 notify 中指定渠道（JS/TS：`{ channel: '渠道名称' }`；Python：`channel='渠道名称'`；名称须与个人中心一致）
 
-<img src="/features/script/step3.png" alt="运行环境配置" class="doc-screenshot" />
+<img src="../public/features/script/step3.png" alt="运行环境配置" class="doc-screenshot" />
 
 </li>
 
@@ -98,7 +98,7 @@ Python 3 脚本建议文件头写 `#!/usr/bin/env python3`，通过 `import webd
 
 填写依赖后点击 **安装依赖**；安装过程可查看日志或停止。建议在保存前使用 **运行脚本** 试运行，输出会显示成功/失败状态与 stdout/stderr。
 
-<img src="/features/script/step4.png" alt="脚本配置与试运行" class="doc-screenshot" />
+<img src="../public/features/script/step4.png" alt="脚本配置与试运行" class="doc-screenshot" />
 
 </li>
 
@@ -116,7 +116,7 @@ Python 3 脚本建议文件头写 `#!/usr/bin/env python3`，通过 `import webd
 
 可添加多条规则；满足任一已启用规则即触发 **任务级通知**（须在「频率」步骤启用通知并选择渠道）。
 
-<img src="/features/script/step5.png" alt="触发规则" class="doc-screenshot" />
+<img src="../public/features/script/step5.png" alt="触发规则" class="doc-screenshot" />
 
 </li>
 
@@ -128,7 +128,7 @@ Python 3 脚本建议文件头写 `#!/usr/bin/env python3`，通过 `import webd
 
 脚本任务的 `console.log` / `print` / `echo` 等内容会写入 [执行记录](./records)，供 diff 类规则比对；与脚本内 `webdiff.notify` 主动发通知相互独立。
 
-<img src="/features/script/step6.png" alt="调度与通知" class="doc-screenshot" />
+<img src="../public/features/script/step6.png" alt="调度与通知" class="doc-screenshot" />
 
 </li>
 
@@ -139,14 +139,14 @@ Python 3 脚本建议文件头写 `#!/usr/bin/env python3`，通过 `import webd
 执行成功、执行异常、输出包含/不包含关键词、输出为空/非空、输出内容变化/无变化、输出正则匹配、输出 JSON 字段判断、输出数值比较、响应超时
 
 ::: tip 未添加规则时不通知
-与其它任务类型相同：**未添加任何触发规则时，即使脚本执行成功也不会发送任务级通知**。若需在脚本内无条件发消息，请使用 `webdiff.notify` / `webdiff_notify`（见 [WebDiff SDK](/reference/webdiff-sdk)）。
+与其它任务类型相同：**未添加任何触发规则时，即使脚本执行成功也不会发送任务级通知**。若需在脚本内无条件发消息，请使用 `webdiff.notify` / `webdiff_notify`（见 [WebDiff SDK](../reference/webdiff-sdk.md)）。
 :::
 
 ## WebDiff SDK
 
 自定义脚本通过内置 **WebDiff SDK**（`webdiff` 包）读取运行环境、Cookie Plus 登录态、发送通知、编排其它任务等。执行前客户端会自动下发 SDK 到脚本工作目录，无需单独安装。
 
-完整 API 参考（JavaScript / TypeScript、Python 3、Shell）见 **[WebDiff SDK](/reference/webdiff-sdk)**。
+完整 API 参考（JavaScript / TypeScript、Python 3、Shell）见 **[WebDiff SDK](../reference/webdiff-sdk.md)**。
 
 ::: warning 错误处理
 建议在 JS/TS 入口使用 `main().catch(...)` 并 `process.exit(1)`；Python 在异常分支调用 `sys.exit(1)` 或让未捕获异常自然退出；Shell 使用 `set -e` 或显式判断退出码，以便「执行异常」规则正确识别失败。

@@ -34,7 +34,7 @@
 
 在客户端点击「新建任务」，选择「**HTTP 请求**」。该类型不打开浏览器，直接在本地用 HTTP 客户端发请求。
 
-<img src="/features/http/step1.png" alt="选择 HTTP 请求类型" class="doc-screenshot" />
+<img src="../public/features/http/step1.png" alt="选择 HTTP 请求类型" class="doc-screenshot" />
 
 </li>
 
@@ -44,7 +44,7 @@
 
 配置任务标识、运行方案与完整请求参数。
 
-<img src="/features/http/step2.png" alt="HTTP 请求配置" class="doc-screenshot" />
+<img src="../public/features/http/step2.png" alt="HTTP 请求配置" class="doc-screenshot" />
 
 **任务名称**
 
@@ -109,7 +109,7 @@
 
 公开 API 或无登录态需求时可跳过。需要 Session / Token Cookie 时在此配置。
 
-<img src="/features/http/step3.png" alt="Cookie 配置" class="doc-screenshot" />
+<img src="../public/features/http/step3.png" alt="Cookie 配置" class="doc-screenshot" />
 
 **手动输入**
 
@@ -136,7 +136,7 @@
 
 定义 **何时发送通知**。可添加多条规则，或使用 **规则组** 嵌套 AND/OR 逻辑。
 
-<img src="/features/http/step4.png" alt="配置触发规则" class="doc-screenshot" />
+<img src="../public/features/http/step4.png" alt="配置触发规则" class="doc-screenshot" />
 
 **单条规则参数**
 
@@ -169,7 +169,7 @@
 
 设置 Cron 调度、随机延迟与通知渠道，保存任务。
 
-<img src="/features/http/step5.png" alt="频率与通知" class="doc-screenshot" />
+<img src="../public/features/http/step5.png" alt="频率与通知" class="doc-screenshot" />
 
 **检测规则 (Cron)**
 

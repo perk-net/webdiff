@@ -26,7 +26,7 @@
 
 在客户端底部或侧栏进入 **「我的」**，找到 **cookie plus 账号** 卡片。暂无账号时会提示点击上方按钮添加。
 
-<img src="/features/profile/cookie-plus/step1.png" alt="我的页面 cookie plus 账号区域" class="doc-screenshot" />
+<img src="../public/features/profile/cookie-plus/step1.png" alt="我的页面 cookie plus 账号区域" class="doc-screenshot" />
 
 </li>
 
@@ -43,7 +43,7 @@
 | Secret Key | ✅ | 对应的 sk |
 | 同步密码 | ✅ | 端到端密钥，与扩展一致 |
 
-<img src="/features/profile/cookie-plus/step2.png" alt="添加 cookie plus 账号" class="doc-screenshot" />
+<img src="../public/features/profile/cookie-plus/step2.png" alt="添加 cookie plus 账号" class="doc-screenshot" />
 
 </li>
 

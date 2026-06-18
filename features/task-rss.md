@@ -18,7 +18,7 @@
 
 新建任务并选择「RSS 订阅」，用于跟踪 Feed 源的新条目或字段变化。
 
-<img src="/features/rss/step1.png" alt="选择 RSS 订阅" class="doc-screenshot" />
+<img src="../public/features/rss/step1.png" alt="选择 RSS 订阅" class="doc-screenshot" />
 
 </li>
 
@@ -28,7 +28,7 @@
 
 输入 RSS/Atom 链接，客户端会拉取并解析条目列表。
 
-<img src="/features/rss/step2.png" alt="填写 RSS 地址" class="doc-screenshot" />
+<img src="../public/features/rss/step2.png" alt="填写 RSS 地址" class="doc-screenshot" />
 
 </li>
 
@@ -38,7 +38,7 @@
 
 勾选要关注的字段（如 title、link、description、pubDate）。
 
-<img src="/features/rss/step3.png" alt="选择监控字段" class="doc-screenshot" />
+<img src="../public/features/rss/step3.png" alt="选择监控字段" class="doc-screenshot" />
 
 </li>
 
@@ -48,7 +48,7 @@
 
 配置关键词/内容变化等规则与执行频率，绑定通知后保存。
 
-<img src="/features/rss/step4.png" alt="规则频率与通知" class="doc-screenshot" />
+<img src="../public/features/rss/step4.png" alt="规则频率与通知" class="doc-screenshot" />
 
 </li>
 

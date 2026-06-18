@@ -18,7 +18,7 @@
 
 新建任务并选择「网站证书」，自动检测目标 HTTPS 站点的 TLS 证书。
 
-<img src="/features/ssl/step1.png" alt="选择网站证书类型" class="doc-screenshot" />
+<img src="../public/features/ssl/step1.png" alt="选择网站证书类型" class="doc-screenshot" />
 
 </li>
 
@@ -28,7 +28,7 @@
 
 输入 `https://` 开头的地址，客户端会读取证书链与有效期。
 
-<img src="/features/ssl/step2.png" alt="填写站点 URL" class="doc-screenshot" />
+<img src="../public/features/ssl/step2.png" alt="填写站点 URL" class="doc-screenshot" />
 
 </li>
 
@@ -38,7 +38,7 @@
 
 例如证书剩余天数少于 30 天时通知。
 
-<img src="/features/ssl/step3.png" alt="设置临期规则" class="doc-screenshot" />
+<img src="../public/features/ssl/step3.png" alt="设置临期规则" class="doc-screenshot" />
 
 </li>
 
@@ -48,7 +48,7 @@
 
 建议按天检查；证书信息稳定时可适当降低频率。
 
-<img src="/features/ssl/step4.png" alt="配置检查频率" class="doc-screenshot" />
+<img src="../public/features/ssl/step4.png" alt="配置检查频率" class="doc-screenshot" />
 
 </li>
 
@@ -58,7 +58,7 @@
 
 绑定通知后保存。模板可使用 daysRemaining、issuer 等变量。
 
-<img src="/features/ssl/step5.png" alt="保存任务" class="doc-screenshot" />
+<img src="../public/features/ssl/step5.png" alt="保存任务" class="doc-screenshot" />
 
 </li>
 

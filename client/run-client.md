@@ -10,7 +10,7 @@
 - 可查看：名称、在线状态、系统、版本、关联任务数、最近活跃时间
 - 可操作：**重命名**、**踢下线**（其它在线设备）、**删除**（不可删除当前本机）
 
-<img src="/client/clients.png" alt="我的客户端列表" class="doc-screenshot" />
+<img src="../public/client/clients.png" alt="我的客户端列表" class="doc-screenshot" />
 
 ::: tip 建议命名
 多机部署时为客户端取易辨识的名称（如「办公室桌面」「阿里云 CLI」），便于在任务配置中识别。
@@ -20,7 +20,7 @@
 
 新建或编辑任务时，在 **运行客户端** 步骤选择以下方案之一：
 
-<img src="/features/script/step2.png" alt="任务中的运行客户端配置" class="doc-screenshot" />
+<img src="../public/features/script/step2.png" alt="任务中的运行客户端配置" class="doc-screenshot" />
 
 | 方案 | 说明 | 典型用途 |
 | --- | --- | --- |

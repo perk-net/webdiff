@@ -88,7 +88,7 @@ Bearer {{API_TOKEN}}
 
 ## 在自定义脚本中使用
 
-任务配置里的 <code v-pre>{{变量名}}</code> **不会** 自动注入脚本进程。脚本内需通过 [WebDiff SDK](/reference/webdiff-sdk) 读取：
+任务配置里的 <code v-pre>{{变量名}}</code> **不会** 自动注入脚本进程。脚本内需通过 [WebDiff SDK](../reference/webdiff-sdk.md) 读取：
 
 | 语言 | 读取方式 |
 | --- | --- |

@@ -282,7 +282,7 @@ token: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 | sortOrder | number | 排序序号 |
 
 ::: tip taskConfig 说明
-`taskConfig` 为 JSON 字符串，结构因任务类型而异。详见 [监控任务类型](/features/task-types) 各类型说明页。
+`taskConfig` 为 JSON 字符串，结构因任务类型而异。详见 [监控任务类型](../features/task-types.md) 各类型说明页。
 :::
 
 ### 创建监控任务
@@ -583,7 +583,7 @@ token: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 | updateTime | string | 更新时间 |
 
 ::: tip config 配置说明
-各渠道 `config` 字段结构详见 [通知渠道](/features/notify-channel) 及各渠道说明页。
+各渠道 `config` 字段结构详见 [通知渠道](../features/notify-channel.md) 及各渠道说明页。
 :::
 
 ### 新增通知渠道

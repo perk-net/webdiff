@@ -1,6 +1,6 @@
 # 更新日志
 
-按时间倒序记录 **网页侦探** 的版本更新。如需了解未来计划，欢迎在 [联系我们](/guide/contact) 中反馈建议。
+按时间倒序记录 **网页侦探** 的版本更新。如需了解未来计划，欢迎在 [联系我们](contact.md) 中反馈建议。
 
 <div class="changelog">
 
@@ -12,7 +12,7 @@
 
 <div class="changelog-section-title"><span class="tag new">NEW</span>自定义脚本</div>
 
-- **[自定义脚本](/features/task-script)** 任务新增 **Python 3** 语言支持
+- **[自定义脚本](../features/task-script.md)** 任务新增 **Python 3** 语言支持
 - 脚本中可 **编排、操作其他任务** 的运行，实现任务间联动
 
 <div class="changelog-section-title"><span class="tag new">NEW</span>全局变量</div>
@@ -46,7 +46,7 @@
 
 <div class="changelog-section-title"><span class="tag new">NEW</span>自定义脚本任务</div>
 
-- 新增 **[自定义脚本](/features/task-script)** 任务类型，支持 JavaScript / TypeScript / Shell 定时执行与触发规则
+- 新增 **[自定义脚本](../features/task-script.md)** 任务类型，支持 JavaScript / TypeScript / Shell 定时执行与触发规则
 
 <div class="changelog-section-title">体验优化</div>
 
@@ -98,34 +98,34 @@
 
 <div class="changelog-section-title"><span class="tag new">NEW</span>六大监控任务类型</div>
 
-- [网站内容监控](/features/task-website)：真实浏览器渲染 + 可视化元素挑选
-- [HTTP 请求](/features/task-http)：按响应码 / 响应体 / 内容变化告警
-- [RSS 订阅](/features/task-rss)：跟踪博客、播客等源的新条目
-- [域名到期（WHOIS）](/features/task-domain)：临期提醒
-- [SSL 证书](/features/task-ssl)：到期 / 异常预警
-- [Ping 检测](/features/task-ping)：主机连通性与平均延迟
+- [网站内容监控](../features/task-website.md)：真实浏览器渲染 + 可视化元素挑选
+- [HTTP 请求](../features/task-http.md)：按响应码 / 响应体 / 内容变化告警
+- [RSS 订阅](../features/task-rss.md)：跟踪博客、播客等源的新条目
+- [域名到期（WHOIS）](../features/task-domain.md)：临期提醒
+- [SSL 证书](../features/task-ssl.md)：到期 / 异常预警
+- [Ping 检测](../features/task-ping.md)：主机连通性与平均延迟
 
 <div class="changelog-section-title"><span class="tag new">NEW</span>网站任务能力</div>
 
-- 内嵌 Chromium 浏览器，[点选元素](/features/element-picker) 自动生成 XPath / CSS
+- 内嵌 Chromium 浏览器，[点选元素](../features/element-picker.md) 自动生成 XPath / CSS
 - 单任务最多并行监控 **20 个元素**
 - 变更对比含 **HTML Diff**，可在执行记录中回溯
 
 <div class="changelog-section-title"><span class="tag new">NEW</span>调度与通知</div>
 
-- 灵活定时调度：常用频率选项 + [Cron 表达式](/features/cron)
-- [多渠道通知](/features/notify-channel)：pushplus、本地桌面、钉钉 / 企业微信 / 飞书机器人、[自定义 Webhook](/features/notify-webhook)、邮件（高级会员）
-- 通知支持 [自定义模板](/features/notify-template)，变量按任务类型动态展开
+- 灵活定时调度：常用频率选项 + [Cron 表达式](../features/cron.md)
+- [多渠道通知](../features/notify-channel.md)：pushplus、本地桌面、钉钉 / 企业微信 / 飞书机器人、[自定义 Webhook](../features/notify-webhook.md)、邮件（高级会员）
+- 通知支持 [自定义模板](../features/notify-template.md)，变量按任务类型动态展开
 
 <div class="changelog-section-title"><span class="tag new">NEW</span>账号与登录态</div>
 
 - 微信扫码登录，无需注册
-- [cookie plus](/features/cookie-plus) 同步浏览器登录态，支持需登录页面监控
+- [cookie plus](../features/cookie-plus.md) 同步浏览器登录态，支持需登录页面监控
 
 <div class="changelog-section-title"><span class="tag new">NEW</span>会员与配额</div>
 
 - 4 档会员：**免费 / 会员 / 高级会员 / 企业会员**
-- 免费版 10 个任务起步，详见 [会员与配额](/guide/membership)
+- 免费版 10 个任务起步，详见 [会员与配额](membership.md)
 
 <div class="changelog-section-title"><span class="tag new">NEW</span>记录与文档</div>
 

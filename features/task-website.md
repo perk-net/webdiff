@@ -32,7 +32,7 @@
 
 在客户端点击「新建任务」，选择「**网站内容监控**」。可先浏览任务列表了解已有监控。
 
-<img src="/features/website/step1.png" alt="新建网站内容监控任务" class="doc-screenshot" />
+<img src="../public/features/website/step1.png" alt="新建网站内容监控任务" class="doc-screenshot" />
 
 </li>
 
@@ -42,7 +42,7 @@
 
 配置任务标识、运行环境与访问参数。
 
-<img src="/features/website/step2.png" alt="输入监控网址" class="doc-screenshot" />
+<img src="../public/features/website/step2.png" alt="输入监控网址" class="doc-screenshot" />
 
 **任务名称**
 
@@ -113,7 +113,7 @@
 
 在页面加载完成后、提取监控元素 **之前** 执行交互脚本，用于登录、关闭弹窗、切换 Tab、搜索筛选、点击「加载更多」等。
 
-<img src="/features/website/step5.png" alt="前置操作配置" class="doc-screenshot" />
+<img src="../public/features/website/step5.png" alt="前置操作配置" class="doc-screenshot" />
 
 **提取前滚动**
 
@@ -144,7 +144,7 @@
 - 支持 Playwright 全部 page API 及完整 JavaScript 语法（`if/for/try` 等）
 - 单次执行超时约 **60 秒**；语法错误、运行报错或超时会判定为 **执行失败**，不再继续提取元素
 
-详细写法、示例与注意事项见 **[前置操作脚本](/reference/pre-action-script)**。
+详细写法、示例与注意事项见 **[前置操作脚本](../reference/pre-action-script.md)**。
 
 **变量**
 
@@ -163,7 +163,7 @@
 
 通过可视化挑选器选定要监控的 DOM 区域，最多 **5 个** 元素。
 
-<img src="/features/website/step3.png" alt="选择监控元素" class="doc-screenshot" />
+<img src="../public/features/website/step3.png" alt="选择监控元素" class="doc-screenshot" />
 
 **打开预览窗口**
 
@@ -185,7 +185,7 @@
 
 至少添加 **1 个** 有效选择器才能进入下一步。多个元素各自独立提取，触发规则可指定作用在某个元素或全部元素上。
 
-<img src="/features/website/step4.png" alt="确认选择器与预览" class="doc-screenshot" />
+<img src="../public/features/website/step4.png" alt="确认选择器与预览" class="doc-screenshot" />
 
 </li>
 
@@ -195,7 +195,7 @@
 
 定义 **何时发送通知**。可添加多条规则，或使用 **规则组** 嵌套 AND/OR 逻辑。
 
-<img src="/features/website/step6.png" alt="触发规则" class="doc-screenshot" />
+<img src="../public/features/website/step6.png" alt="触发规则" class="doc-screenshot" />
 
 **单条规则参数**
 
@@ -227,7 +227,7 @@
 
 设置 Cron 调度、随机延迟、截图与通知渠道，保存任务。
 
-<img src="/features/website/step7.png" alt="频率与通知" class="doc-screenshot" />
+<img src="../public/features/website/step7.png" alt="频率与通知" class="doc-screenshot" />
 
 **检测规则 (Cron)**
 
@@ -285,7 +285,7 @@
 
 ## 相关文档
 
-- [前置操作脚本](/reference/pre-action-script) — 脚本 API、录制说明与示例
+- [前置操作脚本](../reference/pre-action-script.md) — 脚本 API、录制说明与示例
 - [cookie plus 账号](./cookie-plus) — 登录态同步
 - [全局变量](./global-vars) — User-Agent、选择器、Cookie 值等占位符
 - [运行客户端](../client/run-client) — 单节点 / 全节点 / 指定节点

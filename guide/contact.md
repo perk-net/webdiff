@@ -33,7 +33,7 @@
 ## 扫码加入 QQ 群
 
 <div class="qr-card">
-  <img src="/images/qq-group.png" alt="网页侦探官方 QQ 群二维码" />
+  <img src="../public/images/qq-group.png" alt="网页侦探官方 QQ 群二维码" />
   <div class="qr-title">网页侦探官方群</div>
   <div class="qr-hint">扫码加入后，请先提供 <strong>用户标识</strong> 再反馈问题</div>
 </div>
