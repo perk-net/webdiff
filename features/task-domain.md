@@ -10,59 +10,47 @@
 
 ## 创建步骤
 
-<ol class="feature-step-list">
 
-<li>
 
 ### 选择域名到期类型
 
 新建任务时选择「域名到期时间」。
 
-<img src="../public/features/domain/step1.png" alt="选择域名到期类型" class="doc-screenshot" />
+![选择域名到期类型](../public/features/domain/step1.png)
 
-</li>
 
-<li>
 
 ### 填写域名
 
 输入要查询的根域名（如 `example.com`），无需带协议头。
 
-<img src="../public/features/domain/step2.png" alt="填写域名" class="doc-screenshot" />
+![填写域名](../public/features/domain/step2.png)
 
-</li>
 
-<li>
 
 ### 设置到期规则
 
 常见配置：距到期不足 30/7 天提醒，或 WHOIS 到期时间发生变化时通知。
 
-<img src="../public/features/domain/step3.png" alt="设置到期规则" class="doc-screenshot" />
+![设置到期规则](../public/features/domain/step3.png)
 
-</li>
 
-<li>
 
 ### 配置检查频率
 
 域名信息变化较慢，通常按天或周检查即可。
 
-<img src="../public/features/domain/step4.png" alt="配置检查频率" class="doc-screenshot" />
+![配置检查频率](../public/features/domain/step4.png)
 
-</li>
 
-<li>
 
 ### 通知与保存
 
 绑定通知渠道后保存。通知可包含剩余天数、到期日期、注册商等变量。
 
-<img src="../public/features/domain/step5.png" alt="通知与保存" class="doc-screenshot" />
+![通知与保存](../public/features/domain/step5.png)
 
-</li>
 
-</ol>
 
 ## 触发规则
 

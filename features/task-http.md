@@ -26,25 +26,21 @@
 
 向导共 **5 步**：类型 → HTTP 请求配置 → Cookie → 触发规则 → 频率与通知。
 
-<ol class="feature-step-list">
 
-<li>
 
 ### 选择 HTTP 请求类型
 
 在客户端点击「新建任务」，选择「**HTTP 请求**」。该类型不打开浏览器，直接在本地用 HTTP 客户端发请求。
 
-<img src="../public/features/http/step1.png" alt="选择 HTTP 请求类型" class="doc-screenshot" />
+![选择 HTTP 请求类型](../public/features/http/step1.png)
 
-</li>
 
-<li>
 
 ### HTTP 请求配置
 
 配置任务标识、运行方案与完整请求参数。
 
-<img src="../public/features/http/step2.png" alt="HTTP 请求配置" class="doc-screenshot" />
+![HTTP 请求配置](../public/features/http/step2.png)
 
 **任务名称**
 
@@ -101,15 +97,13 @@
 - 支持 [全局变量](./global-vars) 占位符
 - 适用场景：POST 查询、GraphQL、Webhook 模拟、带参数的创建/更新接口
 
-</li>
 
-<li>
 
 ### Cookie 配置（可选）
 
 公开 API 或无登录态需求时可跳过。需要 Session / Token Cookie 时在此配置。
 
-<img src="../public/features/http/step3.png" alt="Cookie 配置" class="doc-screenshot" />
+![Cookie 配置](../public/features/http/step3.png)
 
 **手动输入**
 
@@ -128,15 +122,13 @@
 使用 cookie plus 时，手动 Cookie 列表不再生效；域名须与接口所在站点匹配。
 :::
 
-</li>
 
-<li>
 
 ### 配置触发规则
 
 定义 **何时发送通知**。可添加多条规则，或使用 **规则组** 嵌套 AND/OR 逻辑。
 
-<img src="../public/features/http/step4.png" alt="配置触发规则" class="doc-screenshot" />
+![配置触发规则](../public/features/http/step4.png)
 
 **单条规则参数**
 
@@ -161,15 +153,13 @@
 「响应内容变化 / 无变化」比对的是 **响应体** 文本，不含状态码。若只关心状态码，请使用「响应码等于/不等于」规则。
 :::
 
-</li>
 
-<li>
 
 ### 频率与通知
 
 设置 Cron 调度、随机延迟与通知渠道，保存任务。
 
-<img src="../public/features/http/step5.png" alt="频率与通知" class="doc-screenshot" />
+![频率与通知](../public/features/http/step5.png)
 
 **检测规则 (Cron)**
 
@@ -194,9 +184,7 @@
 - 可预览模板效果，或在「管理模板」中自定义 [通知模板](./notify-template)
 - 模板中可使用 `statusCode` 等 HTTP 任务变量
 
-</li>
 
-</ol>
 
 ## 触发规则
 

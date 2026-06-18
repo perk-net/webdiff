@@ -24,25 +24,21 @@
 
 向导共 **7 步**：类型 → 网址 → Cookie → 前置操作 → 选择元素 → 触发规则 → 频率与通知。可点击顶部步骤条在已访问过的步骤间跳转。
 
-<ol class="feature-step-list">
 
-<li>
 
 ### 选择任务类型
 
 在客户端点击「新建任务」，选择「**网站内容监控**」。可先浏览任务列表了解已有监控。
 
-<img src="../public/features/website/step1.png" alt="新建网站内容监控任务" class="doc-screenshot" />
+![新建网站内容监控任务](../public/features/website/step1.png)
 
-</li>
 
-<li>
 
 ### 输入监控网址
 
 配置任务标识、运行环境与访问参数。
 
-<img src="../public/features/website/step2.png" alt="输入监控网址" class="doc-screenshot" />
+![输入监控网址](../public/features/website/step2.png)
 
 **任务名称**
 
@@ -74,9 +70,7 @@
 - 选 **自定义** 可手动编辑完整 UA 字符串
 - 支持 [全局变量](./global-vars) 占位符，如 `{{MOBILE_UA}}`
 
-</li>
 
-<li>
 
 ### Cookie 配置（可选）
 
@@ -105,15 +99,13 @@
 
 多个域名标签时，会 **合并** 这些域名下的 Cookie 一并注入。绑定后手动 Cookie 列表不再使用。
 
-</li>
 
-<li>
 
 ### 前置操作（可选）
 
 在页面加载完成后、提取监控元素 **之前** 执行交互脚本，用于登录、关闭弹窗、切换 Tab、搜索筛选、点击「加载更多」等。
 
-<img src="../public/features/website/step5.png" alt="前置操作配置" class="doc-screenshot" />
+![前置操作配置](../public/features/website/step5.png)
 
 **提取前滚动**
 
@@ -155,15 +147,13 @@
 
 编辑代码时若出现新的 `vars.xxx` 引用，系统会自动在变量表补齐对应行。敏感信息 **不要** 硬编码在脚本中，应使用变量表。
 
-</li>
 
-<li>
 
 ### 选择监控元素
 
 通过可视化挑选器选定要监控的 DOM 区域，最多 **5 个** 元素。
 
-<img src="../public/features/website/step3.png" alt="选择监控元素" class="doc-screenshot" />
+![选择监控元素](../public/features/website/step3.png)
 
 **打开预览窗口**
 
@@ -185,17 +175,15 @@
 
 至少添加 **1 个** 有效选择器才能进入下一步。多个元素各自独立提取，触发规则可指定作用在某个元素或全部元素上。
 
-<img src="../public/features/website/step4.png" alt="确认选择器与预览" class="doc-screenshot" />
+![确认选择器与预览](../public/features/website/step4.png)
 
-</li>
 
-<li>
 
 ### 配置触发规则
 
 定义 **何时发送通知**。可添加多条规则，或使用 **规则组** 嵌套 AND/OR 逻辑。
 
-<img src="../public/features/website/step6.png" alt="触发规则" class="doc-screenshot" />
+![触发规则](../public/features/website/step6.png)
 
 **单条规则参数**
 
@@ -219,15 +207,13 @@
 首次执行无历史快照时，「内容变化 / 无变化」类规则通常不会触发，需至少成功执行一次建立基线。
 :::
 
-</li>
 
-<li>
 
 ### 频率与通知
 
 设置 Cron 调度、随机延迟、截图与通知渠道，保存任务。
 
-<img src="../public/features/website/step7.png" alt="频率与通知" class="doc-screenshot" />
+![频率与通知](../public/features/website/step7.png)
 
 **检测规则 (Cron)**
 
@@ -259,9 +245,7 @@
 - 留空时按任务类型与主规则 **自动匹配** 内置默认模板
 - 可预览模板效果，或在「管理模板」中自定义 [通知模板](./notify-template)
 
-</li>
 
-</ol>
 
 ## 触发规则
 

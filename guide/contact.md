@@ -4,39 +4,16 @@
 
 ## 联系方式
 
-<div class="contact-grid">
-
-<div class="contact-card">
-  <div class="icon">💬</div>
-  <div class="body">
-    <span class="title">官方 QQ 群</span>
-    <div class="desc">
-      群号：<strong>171639101</strong><br />
-      日常答疑、故障反馈、版本预告
-    </div>
-  </div>
-</div>
-
-<div class="contact-card">
-  <div class="icon">💚</div>
-  <div class="body">
-    <span class="title">微信号</span>
-    <div class="desc">
-      微信：<strong>pcstx1</strong><br />
-      添加请备注「网页侦探」
-    </div>
-  </div>
-</div>
-
-</div>
+| 渠道 | 信息 |
+| --- | --- |
+| 官方 QQ 群 | 群号 **171639101**，日常答疑、故障反馈、版本预告 |
+| 微信号 | **pcstx1**（添加请备注「网页侦探」） |
 
 ## 扫码加入 QQ 群
 
-<div class="qr-card">
-  <img src="../public/images/qq-group.png" alt="网页侦探官方 QQ 群二维码" />
-  <div class="qr-title">网页侦探官方群</div>
-  <div class="qr-hint">扫码加入后，请先提供 <strong>用户标识</strong> 再反馈问题</div>
-</div>
+![网页侦探官方 QQ 群二维码](../public/images/qq-group.png)
+
+**网页侦探官方群** — 扫码加入后，请先提供 **用户标识** 再反馈问题。
 
 ## 反馈小贴士
 

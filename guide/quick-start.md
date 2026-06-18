@@ -59,7 +59,7 @@
 任务列表中点击 <kbd>立即执行</kbd>，可马上验证配置是否正确、通知能否收到。
 :::
 
-<img src="../public/guide/task-list.png" alt="监控任务列表：新增任务、筛选与立即执行" class="doc-screenshot" />
+![监控任务列表：新增任务、筛选与立即执行](../public/guide/task-list.png)
 
 ## 完成 🎉
 

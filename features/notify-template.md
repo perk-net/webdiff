@@ -13,29 +13,23 @@
 
 ## 操作步骤
 
-<ol class="feature-step-list">
 
-<li>
 
 ### 查看通知模板概览
 
 在 **「我的」** 页面可看到内置模板数量与「我的模板」数量；尚无自定义模板时会提示通过「管理模板」克隆或新建。
 
-<img src="../public/features/profile/notify-template/step1.png" alt="我的页面通知模板区域" class="doc-screenshot" />
+![我的页面通知模板区域](../public/features/profile/notify-template/step1.png)
 
-</li>
 
-<li>
 
 ### 管理模板：克隆或新建
 
 点击 **「管理模板」** 打开弹窗，浏览内置列表与变量说明；可 **克隆** 内置模板或 **新建**，并指定适用的任务类型与规则类型。
 
-<img src="../public/features/profile/notify-template/step2.png" alt="通知模板管理弹窗" class="doc-screenshot" />
+![通知模板管理弹窗](../public/features/profile/notify-template/step2.png)
 
-</li>
 
-</ol>
 
 ## 常用变量
 

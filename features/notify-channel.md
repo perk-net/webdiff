@@ -14,29 +14,23 @@
 
 ## 操作步骤
 
-<ol class="feature-step-list">
 
-<li>
 
 ### 打开「我的」中的通知渠道区域
 
 进入 **「我的」**，在 **通知渠道** 卡片中查看已添加的渠道；列表为空时点击 **「添加渠道」**。
 
-<img src="../public/features/profile/notify-channel/step1.png" alt="我的页面通知渠道列表" class="doc-screenshot" />
+![我的页面通知渠道列表](../public/features/profile/notify-channel/step1.png)
 
-</li>
 
-<li>
 
 ### 添加渠道并测试
 
 选择渠道类型（如 pushplus、钉钉机器人等），填写名称与必填参数（token、Webhook 等），保存前可 **测试** 是否收到消息。
 
-<img src="../public/features/profile/notify-channel/step2.png" alt="添加通知渠道" class="doc-screenshot" />
+![添加通知渠道](../public/features/profile/notify-channel/step2.png)
 
-</li>
 
-</ol>
 
 ## 创建任务时绑定
 

@@ -10,69 +10,55 @@
 
 ## 创建步骤
 
-<ol class="feature-step-list">
 
-<li>
 
 ### 选择 Ping 检测类型
 
 新建任务时选择「Ping 检测」。
 
-<img src="../public/features/ping/step1.png" alt="选择 Ping 检测" class="doc-screenshot" />
+![选择 Ping 检测](../public/features/ping/step1.png)
 
-</li>
 
-<li>
 
 ### 填写网址或 IP
 
 可直接填 IP/域名，也可填完整 URL，系统会自动解析主机名。
 
-<img src="../public/features/ping/step2.png" alt="填写网址或 IP" class="doc-screenshot" />
+![填写网址或 IP](../public/features/ping/step2.png)
 
-</li>
 
-<li>
 
 ### 设置超时时间
 
 根据网络环境调整单次 Ping 超时，避免弱网误报。
 
-<img src="../public/features/ping/step3.png" alt="设置超时" class="doc-screenshot" />
+![设置超时](../public/features/ping/step3.png)
 
-</li>
 
-<li>
 
 ### 客户端内测试（可选）
 
 创建过程中可一键测试 Ping，确认目标可达与延迟基线。
 
-<img src="../public/features/ping/step4.png" alt="测试 Ping" class="doc-screenshot" />
+![测试 Ping](../public/features/ping/step4.png)
 
-</li>
 
-<li>
 
 ### 配置触发规则
 
 例如：不可达、平均延迟大于阈值、与上次结果变化等。
 
-<img src="../public/features/ping/step5.png" alt="触发规则" class="doc-screenshot" />
+![触发规则](../public/features/ping/step5.png)
 
-</li>
 
-<li>
 
 ### 频率与通知
 
 设置执行频率并绑定通知。通知可含 avgLatencyMs、reachable 等模板变量。
 
-<img src="../public/features/ping/step6.png" alt="频率与通知" class="doc-screenshot" />
+![频率与通知](../public/features/ping/step6.png)
 
-</li>
 
-</ol>
 
 ## 触发规则
 

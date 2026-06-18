@@ -18,19 +18,15 @@
 
 ## 操作步骤
 
-<ol class="feature-step-list">
 
-<li>
 
 ### 打开「我的」中的 cookie plus 区域
 
 在客户端底部或侧栏进入 **「我的」**，找到 **cookie plus 账号** 卡片。暂无账号时会提示点击上方按钮添加。
 
-<img src="../public/features/profile/cookie-plus/step1.png" alt="我的页面 cookie plus 账号区域" class="doc-screenshot" />
+![我的页面 cookie plus 账号区域](../public/features/profile/cookie-plus/step1.png)
 
-</li>
 
-<li>
 
 ### 添加账号并测试连接
 
@@ -43,11 +39,9 @@
 | Secret Key | ✅ | 对应的 sk |
 | 同步密码 | ✅ | 端到端密钥，与扩展一致 |
 
-<img src="../public/features/profile/cookie-plus/step2.png" alt="添加 cookie plus 账号" class="doc-screenshot" />
+![添加 cookie plus 账号](../public/features/profile/cookie-plus/step2.png)
 
-</li>
 
-</ol>
 
 ## 在任务中使用
 

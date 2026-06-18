@@ -13,29 +13,23 @@
 
 ## 创建步骤
 
-<ol class="feature-step-list">
 
-<li>
 
 ### 选择自定义脚本类型
 
 新建任务时选择「自定义脚本」。该类型无固定监控 URL，任务标识为 `script://` + 语言（如 `script://javascript`、`script://python3`）。
 
-<img src="../public/features/script/step1.png" alt="选择自定义脚本类型" class="doc-screenshot" />
+![选择自定义脚本类型](../public/features/script/step1.png)
 
-</li>
 
-<li>
 
 ### 填写基础信息
 
 设置 **任务名称** 与 **运行客户端**（三种运行方案与会员限制见 [运行客户端](../client/run-client)）。
 
-<img src="../public/features/script/step2.png" alt="基础信息与运行客户端" class="doc-screenshot" />
+![基础信息与运行客户端](../public/features/script/step2.png)
 
-</li>
 
-<li>
 
 ### 配置运行环境（可选）
 
@@ -64,11 +58,9 @@
 - Python 3：`webdiff.notify(title, content, alias='别名')` 或 `channel='渠道名称'`
 - 也可不绑定别名，直接在 notify 中指定渠道（JS/TS：`{ channel: '渠道名称' }`；Python：`channel='渠道名称'`；名称须与个人中心一致）
 
-<img src="../public/features/script/step3.png" alt="运行环境配置" class="doc-screenshot" />
+![运行环境配置](../public/features/script/step3.png)
 
-</li>
 
-<li>
 
 ### 编写或引用脚本
 
@@ -98,11 +90,9 @@ Python 3 脚本建议文件头写 `#!/usr/bin/env python3`，通过 `import webd
 
 填写依赖后点击 **安装依赖**；安装过程可查看日志或停止。建议在保存前使用 **运行脚本** 试运行，输出会显示成功/失败状态与 stdout/stderr。
 
-<img src="../public/features/script/step4.png" alt="脚本配置与试运行" class="doc-screenshot" />
+![脚本配置与试运行](../public/features/script/step4.png)
 
-</li>
 
-<li>
 
 ### 定义触发规则
 
@@ -116,11 +106,9 @@ Python 3 脚本建议文件头写 `#!/usr/bin/env python3`，通过 `import webd
 
 可添加多条规则；满足任一已启用规则即触发 **任务级通知**（须在「频率」步骤启用通知并选择渠道）。
 
-<img src="../public/features/script/step5.png" alt="触发规则" class="doc-screenshot" />
+![触发规则](../public/features/script/step5.png)
 
-</li>
 
-<li>
 
 ### 调度与通知
 
@@ -128,11 +116,9 @@ Python 3 脚本建议文件头写 `#!/usr/bin/env python3`，通过 `import webd
 
 脚本任务的 `console.log` / `print` / `echo` 等内容会写入 [执行记录](./records)，供 diff 类规则比对；与脚本内 `webdiff.notify` 主动发通知相互独立。
 
-<img src="../public/features/script/step6.png" alt="调度与通知" class="doc-screenshot" />
+![调度与通知](../public/features/script/step6.png)
 
-</li>
 
-</ol>
 
 ## 触发规则
 
