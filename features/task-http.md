@@ -7,13 +7,13 @@
 - API 健康检查与 HTTP 状态码监控
 - 接口返回 JSON 字段变化或异常文案告警
 - 需要 Authorization、自定义 Header 的内部服务探测
-- 需登录态的 REST 接口（配合 Cookie 或 [cookie plus](./cookie-plus)）
+- 需登录态的 REST 接口（配合 Cookie 或 [cookie plus](./cookie-plus.md)）
 
 ## 执行流程
 
 每次调度或「立即执行」时，客户端在 **运行节点** 本地发起 HTTP 请求：
 
-1. 解析 [全局变量](./global-vars) 占位符，合并 Cookie（含 cookie plus 实时拉取）
+1. 解析 [全局变量](./global-vars.md) 占位符，合并 Cookie（含 cookie plus 实时拉取）
 2. 按配置的方法、Header、Body 请求目标 URL（单次超时 **30 秒**，最多跟随 **5 次** 重定向）
 3. 将响应状态码与响应体（最多 **50000 字符**）写入执行快照
 4. 与上次快照比对，按 **触发规则** 决定是否发送通知
@@ -50,7 +50,7 @@
 
 **运行客户端**
 
-控制请求从哪台客户端发出。三种方案与会员限制见 [运行客户端](../client/run-client)。
+控制请求从哪台客户端发出。三种方案与会员限制见 [运行客户端](../client/run-client.md)。
 
 | 方案 | 说明 | 适用场景 |
 | --- | --- | --- |
@@ -80,7 +80,7 @@
 | 字段 | 说明 |
 | --- | --- |
 | Header 名称 | 如 `Authorization`、`Content-Type`、`Accept` |
-| Header 值 | 支持 [全局变量](./global-vars) 占位符，如 `Bearer {{API_TOKEN}}` |
+| Header 值 | 支持 [全局变量](./global-vars.md) 占位符，如 `Bearer {{API_TOKEN}}` |
 
 可添加多条。常见配置：
 
@@ -94,7 +94,7 @@
 
 - 仅在非 GET/HEAD 方法时显示
 - 可填 JSON 文本、表单字符串等原始 Body，按 Header 中的 `Content-Type` 解析
-- 支持 [全局变量](./global-vars) 占位符
+- 支持 [全局变量](./global-vars.md) 占位符
 - 适用场景：POST 查询、GraphQL、Webhook 模拟、带参数的创建/更新接口
 
 
@@ -110,13 +110,13 @@
 | 字段 | 说明 |
 | --- | --- |
 | 名称 | Cookie 名 |
-| 值 | Cookie 值；支持 [全局变量](./global-vars) 占位符 |
+| 值 | Cookie 值；支持 [全局变量](./global-vars.md) 占位符 |
 
 执行时拼成 `Cookie` 请求头。若 Header 列表中已存在 `Cookie` 项，则 **不会** 自动追加，以避免重复。
 
 **cookie plus 同步**
 
-与网站监控相同：选择 **账号、身份、监控域名** 后绑定，执行时自动拉取最新 Cookie。拉取失败时会尝试使用本地缓存。详见 [cookie plus 账号](./cookie-plus)。
+与网站监控相同：选择 **账号、身份、监控域名** 后绑定，执行时自动拉取最新 Cookie。拉取失败时会尝试使用本地缓存。详见 [cookie plus 账号](./cookie-plus.md)。
 
 ::: warning Cookie Plus 同步模式
 使用 cookie plus 时，手动 Cookie 列表不再生效；域名须与接口所在站点匹配。
@@ -136,7 +136,7 @@
 | --- | --- | --- |
 | 类型 | 全部 | 见下文「触发规则」表格 |
 | 响应码 | 响应码等于 / 不等于 | 100～599，与本次 HTTP 响应状态码比较 |
-| 关键词 | 响应内容包含 / 不包含 | 匹配 **响应体** 文本；支持 [全局变量](./global-vars) |
+| 关键词 | 响应内容包含 / 不包含 | 匹配 **响应体** 文本；支持 [全局变量](./global-vars.md) |
 | 字段路径 | JSON 字段判断 | 点分路径，如 `code`、`data.total`、`items[0].status`；对 **响应体 JSON** 解析后取值（请写 `data.total`，不要写 `body.data.total`） |
 | 运算符 | JSON 字段判断 | 等于、不等于、大小比较、包含、存在、值变化等 |
 | 期望值 | JSON 字段判断 | 与字段值比较的目标 |
@@ -181,7 +181,7 @@
 **通知模板**
 
 - 留空时按任务类型与主规则 **自动匹配** 内置默认模板
-- 可预览模板效果，或在「管理模板」中自定义 [通知模板](./notify-template)
+- 可预览模板效果，或在「管理模板」中自定义 [通知模板](./notify-template.md)
 - 模板中可使用 `statusCode` 等 HTTP 任务变量
 
 
@@ -208,7 +208,7 @@ HTTP 请求支持以下规则类型（可添加多条，支持规则组与 AND/O
 
 ## 相关文档
 
-- [cookie plus 账号](./cookie-plus) — 登录态同步
-- [全局变量](./global-vars) — Header 值、Cookie 值、请求体占位符
-- [运行客户端](../client/run-client) — 单节点 / 全节点 / 指定节点
-- [通知渠道](./notify-channel) · [通知模板](./notify-template)
+- [cookie plus 账号](./cookie-plus.md) — 登录态同步
+- [全局变量](./global-vars.md) — Header 值、Cookie 值、请求体占位符
+- [运行客户端](../client/run-client.md) — 单节点 / 全节点 / 指定节点
+- [通知渠道](./notify-channel.md) · [通知模板](./notify-template.md)

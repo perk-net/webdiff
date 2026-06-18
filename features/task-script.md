@@ -7,7 +7,7 @@
 ## 适用场景
 
 - 调用第三方 API 并监控返回字段或数值
-- 结合 [cookie plus](./cookie-plus) 登录态访问需鉴权的接口
+- 结合 [cookie plus](./cookie-plus.md) 登录态访问需鉴权的接口
 - 定时执行 Shell/curl 健康检查，或用 Python（如 `requests`）抓取接口数据
 - 脚本内根据业务逻辑主动发通知（与任务级通知规则互补）
 
@@ -25,7 +25,7 @@
 
 ### 填写基础信息
 
-设置 **任务名称** 与 **运行客户端**（三种运行方案与会员限制见 [运行客户端](../client/run-client)）。
+设置 **任务名称** 与 **运行客户端**（三种运行方案与会员限制见 [运行客户端](../client/run-client.md)）。
 
 ![基础信息与运行客户端](../public/features/script/step2.png)
 
@@ -49,11 +49,11 @@
 - JavaScript/TypeScript：`webdiff.cookiePlus('别名')`、`webdiff.localStorage('别名')`
 - Python 3：`webdiff.cookie_plus('别名')`、`webdiff.local_storage('别名')`
 - Shell：先 `source "$WEBDIFF_HOME/webdiff.sh"`，再使用 `webdiff_cookie_file` 等辅助函数
-- 账号管理见 [cookie plus 账号](./cookie-plus)
+- 账号管理见 [cookie plus 账号](./cookie-plus.md)
 
 **通知别名**
 
-- 将别名映射到 [通知渠道](./notify-channel)（含「本地通知」）
+- 将别名映射到 [通知渠道](./notify-channel.md)（含「本地通知」）
 - JavaScript/TypeScript：`webdiff.notify(title, content, { alias: '别名' })`
 - Python 3：`webdiff.notify(title, content, alias='别名')` 或 `channel='渠道名称'`
 - 也可不绑定别名，直接在 notify 中指定渠道（JS/TS：`{ channel: '渠道名称' }`；Python：`channel='渠道名称'`；名称须与个人中心一致）
@@ -112,9 +112,9 @@ Python 3 脚本建议文件头写 `#!/usr/bin/env python3`，通过 `import webd
 
 ### 调度与通知
 
-设置 Cron 执行频率，按需开启 **启用通知** 并选择 [通知渠道](./notify-channel) 与 [通知模板](./notify-template)。
+设置 Cron 执行频率，按需开启 **启用通知** 并选择 [通知渠道](./notify-channel.md) 与 [通知模板](./notify-template.md)。
 
-脚本任务的 `console.log` / `print` / `echo` 等内容会写入 [执行记录](./records)，供 diff 类规则比对；与脚本内 `webdiff.notify` 主动发通知相互独立。
+脚本任务的 `console.log` / `print` / `echo` 等内容会写入 [执行记录](./records.md)，供 diff 类规则比对；与脚本内 `webdiff.notify` 主动发通知相互独立。
 
 ![调度与通知](../public/features/script/step6.png)
 

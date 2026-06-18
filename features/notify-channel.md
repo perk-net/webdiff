@@ -10,7 +10,7 @@
 | 本地通知 | 客户端桌面弹窗 | 免费版 |
 | 钉钉 / 企微 / 飞书机器人 | 群机器人 Webhook | 免费版 |
 | SMTP 邮件 | 发件服务器 + 收件人 | 普通会员及以上 |
-| 自定义 Webhook | JSON 推送到自有服务 | 高级会员，详见 [自定义 Webhook](./notify-webhook) |
+| 自定义 Webhook | JSON 推送到自有服务 | 高级会员，详见 [自定义 Webhook](./notify-webhook.md) |
 
 ## 操作步骤
 

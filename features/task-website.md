@@ -1,6 +1,6 @@
 # 网站内容监控
 
-使用浏览器加载页面，**可视化点选**要监控的元素；支持 Cookie、[cookie plus](./cookie-plus) 登录态、**前置操作**脚本与截图。
+使用浏览器加载页面，**可视化点选**要监控的元素；支持 Cookie、[cookie plus](./cookie-plus.md) 登录态、**前置操作**脚本与截图。
 
 ## 适用场景
 
@@ -48,7 +48,7 @@
 
 **运行客户端**
 
-控制任务在哪台客户端上执行（本地 Cron 调度，非云端代跑）。三种方案与会员限制见 [运行客户端](../client/run-client)。
+控制任务在哪台客户端上执行（本地 Cron 调度，非云端代跑）。三种方案与会员限制见 [运行客户端](../client/run-client.md)。
 
 | 方案 | 说明 | 适用场景 |
 | --- | --- | --- |
@@ -68,7 +68,7 @@
 - 可从预设中选择：Windows / macOS 桌面 Chrome、Safari、Firefox、Edge，或 iPhone / Android 移动 UA
 - 选择 **iPhone / Android 预设** 时，会以 **H5 移动视口** 加载页面，适合监控仅对移动端展示的页面
 - 选 **自定义** 可手动编辑完整 UA 字符串
-- 支持 [全局变量](./global-vars) 占位符，如 `{{MOBILE_UA}}`
+- 支持 [全局变量](./global-vars.md) 占位符，如 `{{MOBILE_UA}}`
 
 
 
@@ -81,13 +81,13 @@
 | 字段 | 说明 |
 | --- | --- |
 | 名称 | Cookie 名，如 `session_id` |
-| 值 | Cookie 值；支持 [全局变量](./global-vars) 占位符 |
+| 值 | Cookie 值；支持 [全局变量](./global-vars.md) 占位符 |
 
 可添加多条 Cookie。执行时注入浏览器上下文，与前置操作、元素提取共用同一会话。
 
 **cookie plus 同步**
 
-适合需长期维持登录、Cookie 频繁刷新的站点。须先在 [cookie plus 账号](./cookie-plus) 中添加账号并完成扩展端登录。
+适合需长期维持登录、Cookie 频繁刷新的站点。须先在 [cookie plus 账号](./cookie-plus.md) 中添加账号并完成扩展端登录。
 
 | 配置项 | 说明 |
 | --- | --- |
@@ -168,7 +168,7 @@
 | 配置项 | 说明 |
 | --- | --- |
 | 类型 | **CSS** 或 **XPath** |
-| 选择器表达式 | 如 `#price`、`.stock-num`、`//div[@class='title']`；支持 [全局变量](./global-vars) |
+| 选择器表达式 | 如 `#price`、`.stock-num`、`//div[@class='title']`；支持 [全局变量](./global-vars.md) |
 | 对比内容 | **仅文本**：去除 HTML 标签，对比纯文本（推荐价格、标题、库存） |
 | | **完整 HTML**：对比 `outerHTML`，class、style、data 属性变化也会触发 |
 | 备注 | 可选，便于在规则与执行记录中识别，如「商品价格」「库存数量」 |
@@ -191,7 +191,7 @@
 | --- | --- | --- |
 | 作用元素 | 全部 | **全部元素**：任一元素满足即参与判断（结合顶层 OR 时易触发）；或指定「元素 1～N」仅监控该选择器提取结果 |
 | 类型 | 全部 | 见下文「触发规则」表格 |
-| 关键词 | 包含 / 不包含关键词 | 支持 [全局变量](./global-vars) |
+| 关键词 | 包含 / 不包含关键词 | 支持 [全局变量](./global-vars.md) |
 | 运算符 | 数值比较 | 小于、小于等于、大于、大于等于、等于、不等于 |
 | 阈值 | 数值比较 | 与提取内容中 **首个数字** 比较，如 `¥128.00` 取 `128` |
 | 运算符 | 正则匹配 | 匹配 / 不匹配 |
@@ -243,7 +243,7 @@
 **通知模板**
 
 - 留空时按任务类型与主规则 **自动匹配** 内置默认模板
-- 可预览模板效果，或在「管理模板」中自定义 [通知模板](./notify-template)
+- 可预览模板效果，或在「管理模板」中自定义 [通知模板](./notify-template.md)
 
 
 
@@ -270,7 +270,7 @@
 ## 相关文档
 
 - [前置操作脚本](../reference/pre-action-script.md) — 脚本 API、录制说明与示例
-- [cookie plus 账号](./cookie-plus) — 登录态同步
-- [全局变量](./global-vars) — User-Agent、选择器、Cookie 值等占位符
-- [运行客户端](../client/run-client) — 单节点 / 全节点 / 指定节点
-- [通知渠道](./notify-channel) · [通知模板](./notify-template)
+- [cookie plus 账号](./cookie-plus.md) — 登录态同步
+- [全局变量](./global-vars.md) — User-Agent、选择器、Cookie 值等占位符
+- [运行客户端](../client/run-client.md) — 单节点 / 全节点 / 指定节点
+- [通知渠道](./notify-channel.md) · [通知模板](./notify-template.md)

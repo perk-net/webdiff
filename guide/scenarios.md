@@ -30,7 +30,7 @@
 - **通知**：邮件 / 企业微信
 
 ::: warning 登录态
-后台看板、内网页面请配合 [cookie plus](../features/cookie-plus)。
+后台看板、内网页面请配合 [cookie plus](../features/cookie-plus.md)。
 :::
 
 ---

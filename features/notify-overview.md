@@ -38,10 +38,10 @@
 
 各渠道的具体配置：
 
-- [pushplus](./notify-pushplus)
-- [本地桌面通知](./notify-local)
-- [钉钉 / 企微 / 飞书](./notify-im)
-- [自定义 Webhook](./notify-webhook)
+- [pushplus](./notify-pushplus.md)
+- [本地桌面通知](./notify-local.md)
+- [钉钉 / 企微 / 飞书](./notify-im.md)
+- [自定义 Webhook](./notify-webhook.md)
 
 ## 任务绑定渠道
 

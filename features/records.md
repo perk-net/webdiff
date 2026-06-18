@@ -59,7 +59,7 @@
 
 - 重新打开任务编辑页，点 <kbd>立即执行</kbd> 看是否还能选中
 - 页面结构是否变化（特别是 SPA 类网站重构）
-- 是否需要登录（参考 [cookie plus](./cookie-plus)）
+- 是否需要登录（参考 [cookie plus](./cookie-plus.md)）
 
 ### 2. 页面加载超时
 

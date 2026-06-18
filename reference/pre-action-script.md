@@ -1,6 +1,6 @@
 # 前置操作脚本
 
-**前置操作** 是 [网站内容监控](../features/task-website) 任务中的可选步骤：在页面加载完成后、提取监控元素之前，自动执行一段 JavaScript 代码，用于登录、点击展开、搜索筛选、滚动加载等页面交互。
+**前置操作** 是 [网站内容监控](../features/task-website.md) 任务中的可选步骤：在页面加载完成后、提取监控元素之前，自动执行一段 JavaScript 代码，用于登录、点击展开、搜索筛选、滚动加载等页面交互。
 
 ## 运行方式
 
@@ -118,5 +118,5 @@ for (const item of items) {
 
 ## 相关文档
 
-- [网站内容监控](../features/task-website) — 创建步骤与截图说明
-- [cookie plus 账号](../features/cookie-plus) — 登录态注入
+- [网站内容监控](../features/task-website.md) — 创建步骤与截图说明
+- [cookie plus 账号](../features/cookie-plus.md) — 登录态注入

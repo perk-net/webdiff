@@ -1,6 +1,6 @@
 # WebDiff SDK
 
-[自定义脚本](../features/task-script) 任务在客户端本地执行脚本时，会自动下发内置 **WebDiff SDK**（`webdiff` 包），用于读取运行环境、Cookie Plus 登录态、发送通知、编排其它任务等。
+[自定义脚本](../features/task-script.md) 任务在客户端本地执行脚本时，会自动下发内置 **WebDiff SDK**（`webdiff` 包），用于读取运行环境、Cookie Plus 登录态、发送通知、编排其它任务等。
 
 执行前客户端会在 **脚本工作目录**（`script-workspace`）生成 SDK 文件与本次任务专用的 `webdiff-context.json`，**无需**在 npm / pip 依赖中单独安装 `webdiff`。
 
@@ -75,7 +75,7 @@ const token = ls['auth_token'] || ls.token;
 
 | 参数 | 说明 |
 | --- | --- |
-| `{ channel: '渠道名称' }` | 名称须与 [通知渠道](../features/notify-channel) 中 **完全一致** 且已启用 |
+| `{ channel: '渠道名称' }` | 名称须与 [通知渠道](../features/notify-channel.md) 中 **完全一致** 且已启用 |
 | `{ alias: '别名' }` | 别名须已在「运行环境 → 通知别名」中绑定到具体渠道 |
 
 本地通知使用系统保留名 **`本地通知`**（`webdiff.LOCAL_NOTIFY_CHANNEL_NAME`）。
@@ -256,6 +256,6 @@ Cookie Plus 别名 xxx    →  webdiff.cookiePlus('xxx') / webdiff_cookie_file x
 
 ## 相关文档
 
-- [自定义脚本](../features/task-script) — 创建步骤、依赖安装与触发规则
-- [cookie plus 账号](../features/cookie-plus) — 登录态绑定
-- [通知渠道](../features/notify-channel) — 渠道名称与别名配置
+- [自定义脚本](../features/task-script.md) — 创建步骤、依赖安装与触发规则
+- [cookie plus 账号](../features/cookie-plus.md) — 登录态绑定
+- [通知渠道](../features/notify-channel.md) — 渠道名称与别名配置
